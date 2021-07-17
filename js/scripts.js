@@ -40,7 +40,7 @@ let pokemonList = [
     types: 'water',
   },
   {
-    name: 'Balbasaur',
+    name: 'Blastoise',
     height: 1.6,
     types: 'water',
   },
