@@ -17,12 +17,12 @@ let pokemonList = [
   {
     name: 'Charmander',
     height: 0.6,
-    types: 'fire',
+    types: ['fire'],
   },
   {
     name: 'Charmeleon',
     height: 1.1,
-    types: 'fire',
+    types: ['fire'],
   },
   {
     name: 'Charizard',
@@ -32,16 +32,16 @@ let pokemonList = [
   {
     name: 'Squirtle',
     height: 0.5,
-    types: 'water',
+    types: ['water'],
   },
   {
     name: 'Wartortle',
     height: 1,
-    types: 'water',
+    types: ['water'],
   },
   {
     name: 'Blastoise',
     height: 1.6,
-    types: 'water',
+    types: ['water'],
   },
 ];
