@@ -45,3 +45,8 @@ let pokemonList = [
     types: ['water'],
   },
 ];
+
+//for loop that iterates over each item in pokemonList!
+for (let i = 0; i < pokemonList.length; i++) {
+  document.write(pokemonList[i].name + ' (height: ' + pokemonList[i].height + ')');
+}
