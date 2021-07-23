@@ -47,11 +47,12 @@ let pokemonList = [
 ];
 
 //for loop that iterates over each item in pokemonList!
-for (let i = 0; i < pokemonList.length; i++) {
-  document.write(pokemonList[i].name + ' (height: ' + pokemonList[i].height + ')');
+pokemonList.foreach(function(pokemon) {
+  document.write(pokemon.name + ' (height: ' + pokemon.height +')');
+}
 
 // conditional writes " Wow, that’s big!" if pokemonList is over or equal to 2
-  if (pokemonList[i].height >= 2) {
+  if (pokemon.height >= 2) {
     document.write(" - Wow, that’s big!");
   }
    document.write('<br>')
