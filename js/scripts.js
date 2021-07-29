@@ -1,6 +1,6 @@
 //IIFE function to getAll() & add()
 let pokemonRepository = (function () {
-  let pokemonList = [];
+  let pokemonList = []; //API pokemonList
   let apiUrl = 'https://pokeapi.co/api/v2/pokemon/?limit=150';
 
   function add(pokemon) {
@@ -14,7 +14,7 @@ let pokemonRepository = (function () {
   function showDetails (pokemon){
     console.log (pokemon.name);
   }
-
+//created button & eventlistener for each pokemon.
   function addListItem(pokemon){
     let pokemonList = document.querySelector (".pokemon-list");
     let listpokemon = document.createElement ("li");
@@ -27,7 +27,7 @@ let pokemonRepository = (function () {
       showDetails (pokemon);
     });
   }
-
+//loadList to fetch the data from API.
   function loadList() {
     return fetch(apiUrl).then(function (response) {
       return response.json();
@@ -43,7 +43,7 @@ let pokemonRepository = (function () {
       console.error(e);
     })
   }
-
+//takes a Pokémon item as an argument.
     function loadDetails(item) {
       let url = item.detailsUrl;
       return fetch(url).then(function (response) {
@@ -57,7 +57,7 @@ let pokemonRepository = (function () {
         console.error(e);
       });
     }
-
+//execute loadDetails() when a user clicks on a Pokémon.
     function showDetails(pokemon) {
       pokemonRepository.loadDetails(pokemon).then(function () {
         console.log(pokemon);
