@@ -5,11 +5,23 @@ body {
   line-height: 1.6;
 
 /* background image*/
-  background-image: url("../img/pokemon_background.png");
+  background-image: url("../img/pokemon-bg.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: repeat;
   height: 100vh
+}
+
+h1 {
+  font-size: 50px;
+  font-weight: 700;
+  text-align: center;
+}
+
+p {
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
 }
 
 .pokemon-list {
@@ -28,8 +40,8 @@ body {
 
  .button-class {
    font-size: 20px;
-    width: 100%;
-    margin-top: 20px;
+    width: 80%;
+    margin-top: 40px;
     padding: 10px;
     color: #000;
     border: #4f0303 solid 2px;
