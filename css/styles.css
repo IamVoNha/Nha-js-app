@@ -109,8 +109,10 @@ p {
 }
 
 .modal h1 {
+  font-size: 25px;
   margin-top: 0;
   color: #000000;
+  font-weight: bold;
 }
 
 .modal p {
